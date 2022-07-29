@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>TodoList</title>
+</head>
+<body>
+  <main>
+  <div class="words">
+    <div class="words__title">
+      <h2>Diccionario de palabras</h2>
+    </div>
+    <div class="formData">
+      <div class="form">
+        <form action="">
+          <label for="" class="form__titles">Palabra en español</label>
+          <input type="text" class="input__text" id="inputTextSpanish">
+          <label for="" class="form__titles">Palabra en ingles</label>
+          <input type="text" class="input__text" id="inputTextEnglish">
+          <label for="" class="form__titles">Palabra en Frances</label>
+          <input type="text" class="input__text" id="inputTextFrench">
+          <button type="button" class="button" onclick="addWords()">Agregar</button>
+        </form>
+  
+      </div>
+
+      <div class="data">
+        <div class="words data__spanish">
+          <h2>Palabra en español</h2>
+          <div class="data__word-spanish">
+           
+          </div>
+
+        </div>
+        <div class="words data__english">
+          <h2>Palabra en ingles</h2>
+          <div class="data__word-english">
+            
+          </div> 
+        </div>
+
+        <div class="words data__french">
+          <h2>Palabra en frances</h2>
+          <div class="data__word-french">
+            
+          </div>
+        </div>
+
+      </div>
+      <button type="button" class="button" id="buttonDelete" onclick="deleteElement()">Eliminar</button>
+    </div>
+  </div>
+</main>
+</body>
+</html>
